@@ -1,9 +1,9 @@
 {
-  "greeting": "Hiya",
-  "name": "Lydia",
+  "greeting": "Helloooooo....",
+  "name": "Sneha Samanta",
   "greetingText": "I really like your name btw!",
-  "wishText": "May the js.prototypes always be with you! ;)",
-  "imagePath": "img/lydia2.png",
+  "wishText": "Happy Birthday! 🎉✨ I hope your day is as amazing and wonderful as you are. May this year bring you lots of happiness, success, and all the things that make you smile. Stay as awesome as you are, and keep spreading your beautiful energy everywhere! 💫🎂 P.S. If anyone deserves the happiest day ever, it’s definitely you! 😉",
+  "imagePath": "img/sneha.jpg",
   "text1": "It's your birthday!!! :D",
   "textInChatBox": "Happy birthday to you!! Yeee! Many many happy blah...",
   "sendButtonLabel": "Send",
@@ -17,7 +17,7 @@
   "bigTextPart1": "S",
   "bigTextPart2": "O",
   "wishHeading": "Happy Birthday!",
-  "outroText": "Okay, now come back and tell me if you liked it.",
+  "outroText": "Okay, now tell me if you liked it.",
   "replayText": "Or click, if you want to watch it again.",
   "outroSmiley": ":)"
 }
