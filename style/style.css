@@ -1,301 +1,410 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "Work Sans", sans-serif;
-  background-color: black;
-  color: white;
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    background-color: black;
+    color: white;
 }
 
 .container {
-  height: 100vh;
-  width: 100vh;
-  margin: 0 auto;
-  text-align: center;
-  visibility: hidden;
-  position: relative;
-  overflow: hidden;
+    height: 100vh;
+    width: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    visibility: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .container div.six {
-  top: 10vh;
-  z-index: 1;
+    top: 12vh;
+    z-index: 1;
 }
 
 .container div.seven,
 .container div.eight {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
 }
 
-.container > div {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 20vh;
+.container>div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20vh;
 }
 
 .one {
-  font-size: 4.5rem;
+    font-size: 4.5rem;
 }
 
-.one > img {
-  vertical-align: middle;
-  margin-bottom: 10px;
-  max-width: 100%;
-  height: auto;
+.one>img {
+    vertical-align: middle;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
 .two {
-  font-size: 1.2rem;
-  font-weight: lighter;
+    font-size: 1.2rem;
+    font-weight: lighter;
 }
 
 .three {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 .four .text-box {
-  width: 600px;
-  margin: 0 auto;
-  border: 3px solid #aaa;
-  border-radius: 5px;
-  padding: 10px;
-  position: relative;
+    width: 600px;
+    margin: 0 auto;
+    border: 3px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
 }
 
 .text-box p {
-  margin: 0;
-  text-align: left;
+    margin: 0;
+    text-align: left;
 }
 
 .text-box span {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .text-box .fake-btn {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  color: #fff;
-  background-color: rgb(21, 161, 237);
-  padding: 5px 8px;
-  border-radius: 3px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: #fff;
+    background-color: rgb(21, 161, 237);
+    padding: 5px 8px;
+    border-radius: 3px;
 }
 
 .five p {
-  font-size: 2rem;
-  position: absolute;
-  left: 0;
-  right: 0;
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .idea-3 strong {
-  padding: 3px 5px;
-  border-radius: 3px;
-  display: inline-block;
+    padding: 3px 5px;
+    border-radius: 3px;
+    display: inline-block;
 }
 
 .five .idea-5 {
-  font-size: 4rem;
+    font-size: 4rem;
 }
 
 .idea-5 span,
 .idea-6 span,
 .wish-hbd span {
-  display: inline-block;
+    display: inline-block;
 }
 
 .idea-6 span {
-  font-size: 15rem;
+    font-size: 15rem;
 }
 
 .six {
-  position: relative;
+    position: relative;
 }
 
 .six img {
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
 }
 
 .six .hat {
-  position: absolute;
-  width: 80px;
-  top: -35px;
-  left: 41.5%;
-  /* transform: scale(0.1); */
+    position: absolute;
+    width: 80px;
+    top: -35px;
+    left: 41.5%;
+    /* transform: scale(0.1); */
 }
 
 .baloons img {
-  display: inline-block;
-  position: absolute;
+    display: inline-block;
+    position: absolute;
 }
 
 .baloons img:nth-child(even) {
-  left: -10%;
+    left: -10%;
 }
 
 .baloons img:nth-child(odd) {
-  right: -10%;
+    right: -10%;
 }
 
 .baloons img:nth-child(3n + 0) {
-  left: 30%;
+    left: 30%;
 }
 
 .eight svg {
-  width: 25px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  z-index: -1;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: -1;
 }
 
 .eight svg:nth-child(1) {
-  top: 7vh;
-  left: 5vw;
-  fill: #bd6ecf;
+    top: 7vh;
+    left: 5vw;
+    fill: #bd6ecf;
 }
 
 .eight svg:nth-child(2) {
-  top: 23vh;
-  left: 35vw;
-  fill: #7dd175;
+    top: 23vh;
+    left: 35vw;
+    fill: #7dd175;
 }
 
 .eight svg:nth-child(3) {
-  top: 33vh;
-  left: 23vw;
-  fill: #349d8b;
+    top: 33vh;
+    left: 23vw;
+    fill: #349d8b;
 }
 
 .eight svg:nth-child(4) {
-  top: 43vh;
-  left: 57vw;
-  fill: #347a9d;
+    top: 43vh;
+    left: 57vw;
+    fill: #347a9d;
 }
 
 .eight svg:nth-child(5) {
-  top: 68vh;
-  left: 7vw;
-  fill: #c66053;
+    top: 68vh;
+    left: 7vw;
+    fill: #c66053;
 }
 
 .eight svg:nth-child(6) {
-  top: 42vh;
-  left: 77vw;
-  fill: #bfaa40;
+    top: 42vh;
+    left: 77vw;
+    fill: #bfaa40;
 }
 
 .eight svg:nth-child(7) {
-  top: 68vh;
-  left: 83vw;
-  fill: #e3bae8;
+    top: 68vh;
+    left: 83vw;
+    fill: #e3bae8;
 }
 
 .eight svg:nth-child(8) {
-  top: 86vh;
-  left: 37vw;
-  fill: #8762cb;
+    top: 86vh;
+    left: 37vw;
+    fill: #8762cb;
 }
 
 .eight svg:nth-child(9) {
-  top: 94vh;
-  left: 87vw;
-  fill: #9a90da;
+    top: 94vh;
+    left: 87vw;
+    fill: #9a90da;
 }
 
 .wish-hbd {
-  font-size: 3em;
-  margin: 0;
-  text-transform: uppercase;
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 .wish h5 {
-  font-weight: lighter;
-  font-size: 2rem;
-  margin: 10px 0 0;
+    font-weight: lighter;
+    font-size: 2rem;
+    margin: 10px 0 0;
 }
 
 .nine p {
-  font-size: 2rem;
-  font-weight: lighter;
+    font-size: 2rem;
+    font-weight: lighter;
 }
 
 #replay {
-  z-index: 3;
-  cursor: pointer;
+    z-index: 3;
+    cursor: pointer;
+    background-color: #ff69b4;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+#replay:hover {
+    transform: scale(1.1);
+    background-color: #ff1493;
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.6);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 105, 180, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0);
+    }
 }
 
 /* Media Queries */
 @media screen and (max-height: 1000px) {
-  .six .hat {
-    left: 40%;
-  }
+    .six .hat {
+        left: 40%;
+    }
 }
 
 @media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
-  }
+    .six .hat {
+        left: 37%;
+    }
 }
 
 @media screen and (max-height: 700px) {
-  .six .hat {
-    left: 32%;
-  }
+    .six .hat {
+        left: 32%;
+    }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
-  }
+    .six .hat {
+        left: 32%;
+    }
 }
 
 @media screen and (max-width: 500px) {
-  .container {
+    .container {
+        width: 90%;
+    }
+
+    .four .text-box {
+        width: 90%;
+    }
+
+    .text-box .fake-btn {
+        right: 5px;
+        bottom: -38px;
+    }
+
+    .idea-5 span {
+        display: block;
+    }
+
+    .idea-6 span {
+        font-size: 10rem;
+    }
+
+    .six .hat {
+        width: 50px;
+        top: -20px;
+    }
+
+    .wish-hbd {
+        font-size: 2.2em;
+    }
+
+    .wish h5 {
+        font-size: 1.4rem;
+    }
+
+    .nine p {
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+}
+
+
+/* Surprise Flow Styles */
+
+/* Letter Overlay */
+.letter-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+    background: rgba(0, 0, 0, 0.85);
+    /* Dim background */
+}
+
+/* Paper / Letter Content */
+.paper {
+    background-color: #fff8dc;
+    color: #333;
+    padding: 40px;
     width: 90%;
-  }
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: rotate(-1deg);
+    border-radius: 8px;
+}
 
-  .four .text-box {
-    width: 90%;
-  }
+.paper p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
 
-  .text-box .fake-btn {
-    right: 5px;
-    bottom: -38px;
-  }
+.paper .signature {
+    margin-top: 30px;
+    text-align: right;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.4;
+}
 
-  .idea-5 span {
-    display: block;
-  }
+/* Scrollbar for paper */
+.paper::-webkit-scrollbar {
+    width: 8px;
+}
 
-  .idea-6 span {
-    font-size: 10rem;
-  }
+.paper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
 
-  .six .hat {
-    width: 50px;
-    top: -20px;
-  }
+.paper::-webkit-scrollbar-thumb {
+    background: #d4aa70;
+    border-radius: 4px;
+}
 
-  .wish-hbd {
-    font-size: 2.2em;
-  }
+.paper::-webkit-scrollbar-thumb:hover {
+    background: #c09050;
+}
 
-  .wish h5 {
-    font-size: 1.4rem;
-  }
+/* Balloon Interaction */
+.baloons img {
+    cursor: pointer;
+    transition: transform 0.1s;
+}
 
-  .nine p {
-    font-size: 1.5rem;
-    font-weight: lighter;
-  }
+.baloons img:active {
+    transform: scale(0.9);
 }

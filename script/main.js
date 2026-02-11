@@ -17,9 +17,9 @@ const fetchData = () => {
 
         // Check if the iteration is over
         // Run amimation if so
-        if ( dataArr.length === dataArr.indexOf(customData) + 1 ) {
+        if (dataArr.length === dataArr.indexOf(customData) + 1) {
           animationTimeline();
-        } 
+        }
       });
     });
 };
@@ -290,16 +290,36 @@ const animationTimeline = () => {
         rotation: 90
       },
       "+=1"
-    );
+    )
+    ;
 
-  // tl.seek("currentStep");
-  // tl.timeScale(2);
+  // Balloon Interaction
+  const balloons = document.querySelectorAll(".baloons img");
+  balloons.forEach(b => {
+    b.addEventListener("click", function () {
+      // Pop animation
+      TweenMax.to(this, 0.3, { scale: 1.2, opacity: 0, ease: Back.easeIn, onComplete: () => { this.style.display = 'none'; } });
+    });
+  });
 
-  // Restart Animation on click
+  // Replay / Surprise Trigger
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
-    tl.restart();
+    // Hide outro
+    document.querySelector(".nine").style.display = "none";
+    document.querySelector(".container").style.overflow = "visible";
+
+    // Show Letter Directly
+    const letterSection = document.querySelector(".letter-section");
+    letterSection.style.display = "flex";
+    TweenMax.from(letterSection, 0.5, { opacity: 0, scale: 0.5 });
   });
+
+  // Background Music
+  const music = document.getElementById("bg-music");
+  document.body.addEventListener("click", () => {
+    if (music.paused) music.play();
+  }, { once: true });
 };
 
 // Run fetch and animation in sequence
